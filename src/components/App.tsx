@@ -1,7 +1,11 @@
-import React, {useState, useEffect} from "react";
-import {useAppDispatch, useAppSelector} from "@store/hooks";
-import {counterState, counterActions} from "@/store/slices/counterSlice";
+import React from "react";
 
+import {
+    counterState,
+    counterActions,
+    useAppDispatch,
+    useAppSelector
+} from "@/IndexImporter";
 import "./App.scss";
 
 const starterFeaturesList = [
@@ -28,34 +32,16 @@ const App: React.FC = () => {
         dispatch(counterActions.changeStep(value));
     };
 
-    const [
-        boredActivity,
-        setBoredActivity
-    ] = useState(
-        "En attente d'une activité à faire à 2..."
-    );
-
-    useEffect(() => {
-        const boredApiUrl = import.meta.env.VITE_BORED_API_URL;
-        const searchActivity = async () => {
-            const response = await (await fetch(boredApiUrl)).json();
-            setBoredActivity(response.activity);
-        };
-        searchActivity();
-    }, []);
-
     return (
         <div className="starter">
             <div className="starter-presentation">
                 <p className="title">
                     Starter rapide pour un nouveau projet
                 </p>
-
                 <p className="description">
                     Ce starter contient une configuration précise et complète
                     pour :
                 </p>
-
                 <ul className="starter-features-list">
                     {starterFeaturesList.map((el, index) => {
                         return (
@@ -66,13 +52,11 @@ const App: React.FC = () => {
                     })}
                 </ul>
             </div>
-
             <div className="starter-demonstration">
                 <div className="form-change-number-step">
                     <label htmlFor="changeStepNumber">
                         Changer le pas du compteur
                     </label>
-
                     <input
                         id="changeStepNumber"
                         type="number"
@@ -82,7 +66,6 @@ const App: React.FC = () => {
                         }}
                     />
                 </div>
-
                 <div className="counter-click">
                     <button
                         className="counter-button"
@@ -91,11 +74,9 @@ const App: React.FC = () => {
                     >
                         -
                     </button>
-
                     <p className="counter-value">
                         {counterValue}
                     </p>
-
                     <button
                         className="counter-button"
                         type="button"
@@ -105,10 +86,6 @@ const App: React.FC = () => {
                     </button>
                 </div>
             </div>
-
-            <p>
-                {boredActivity}
-            </p>
         </div>
     );
 };
