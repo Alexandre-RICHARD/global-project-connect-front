@@ -16,12 +16,12 @@ export {sum};
 // ? Store and slice
 import {setupStore} from "@store/store";
 import {useAppDispatch, useAppSelector} from "@store/hooks";
-import {counterActions, counterState} from "@slices/counterSlice";
+import {mainActions, mainState} from "@slices/mainSlice";
 import {renderWithProviders} from "@tests/wrapperProvider";
 
 export {
-    counterActions,
-    counterState,
+    mainActions,
+    mainState,
     renderWithProviders,
     setupStore,
     useAppDispatch,
