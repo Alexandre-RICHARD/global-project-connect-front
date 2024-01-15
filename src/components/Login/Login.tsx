@@ -1,5 +1,6 @@
 import React from "react";
 
+import {errorSaver} from "@/IndexImporter";
 import "./Login.scss";
 
 const Login: React.FC = () => {
@@ -24,7 +25,11 @@ const Login: React.FC = () => {
                 "payload": {"response": responseJSON},
             }, "*");
         } catch (error) {
-            console.trace(error);
+            const errorF = error as Error;
+            await errorSaver(
+                "connection-try-failed",
+                JSON.stringify(errorF.stack)
+            );
         }
     };
 
