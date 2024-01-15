@@ -1,8 +1,14 @@
 // =============================================================================
 // ? Components
 import App from "@components/App";
+import Login from "@components/Login/Login";
+import Register from "@components/Register/Register";
 
-export {App};
+export {
+    App,
+    Login,
+    Register
+};
 
 // =============================================================================
 
