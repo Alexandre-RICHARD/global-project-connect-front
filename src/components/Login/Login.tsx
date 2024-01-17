@@ -15,8 +15,8 @@ const Login: React.FC = () => {
                 },
                 "method": "POST",
                 "body": JSON.stringify({
-                    "mail": "test1@gmail.com",
-                    "password": "au4uqbf11-C-J",
+                    "mail": "test@gmail.com",
+                    "password": "abcdeFGHIJ1234--$@",
                 }),
             });
             const responseJSON = await response.json();
