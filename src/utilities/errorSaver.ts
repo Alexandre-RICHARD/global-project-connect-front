@@ -11,7 +11,7 @@ export const errorSaver = async (
         },
         "method": "POST",
         "body": JSON.stringify({
-            "projectName": "global-connect-front",
+            "projectName": import.meta.env.VITE_PROJECT_NAME,
             "context": context,
             "errorMessage" : errorMessage,
         }),
