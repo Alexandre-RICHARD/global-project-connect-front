@@ -14,5 +14,32 @@ body,
         height: 100%;
         max-height: 900px;
         max-width: 500px;
+
+        .account-modal {
+            background-color: $color0;
+            color: $color14;
+            width: 100%;
+            border-radius: 30px;
+            border: 2px solid $color14;
+            overflow: hidden;
+            padding: 15px;
+            height: fit-content;
+
+            .not-concerned {
+                background-color: $color0;
+                color: $color14;
+                padding-top: 7px;
+                text-align: center;
+
+                &-button {
+                    background-color: $color0;
+                    color: $color6;
+                    font-weight: 500;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+            }
+        }
     }
 }
