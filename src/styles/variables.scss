@@ -1,2 +1,84 @@
 // Les variables scss qui pourront être utilisées par tous le projet
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//? Police d'écriture
+$kanit: "Kanit", sans-serif;
+
+//? Taille de police
+$tiny: 11px;
+$small: 13px;
+$medium: 15px;
+$large: 17px;
+$extra-large: 20px;
+$big-title: 25px;
+
+//? Couleur
+$transparent-white: #ffffff33;
+$transparent-black: #00000033;
+$color0: #ffffff;
+$color1: #ececec;
+$color110: #dfdfdf;
+$color111: #cfcfcf;
+$color112: #bebebe;
+$color113: #919191;
+$color2: #ffd803;
+$color3: #ff8e3c;
+$color4: #ff8906;
+$color5: #f25f4c;
+$color6: #e53170;
+$color7: #ef4565;
+$color8: #e3f6f5;
+$color81: #e8f0fd;
+$color9: #bae8e8;
+$color10: #90b4ce;
+$color11: #3da9fc;
+$color12: #297fc2;
+$color13: #202a53;
+$color14: #151d3f;
+$color15: #152a7e;
+
+//? Z-index
+$z-index-one: 1;
+$z-index-two: 2;
+$z-index-three: 3;
+$z-index-four: 4;
+$z-index-bread-crumb: 5;
+$z-index-header: 6;
+$z-index-header-menu: 7;
+$z-index-header-menu-button: 8;
+$z-index-header-logo: 9;
+$z-index-account-modal: 10;
+$z-index-loading-logo: 11;
+$z-index-versionning: 12;
+
+//? Duration
+$animation-logo-duration: 261ms; // Durée totale = D * 9.55
+// $animation-logo-duration: 3ms;
+$animation-logo-duration-delay: calc($animation-logo-duration * 0.65);
+$transition-header-menu-duration: 300ms;
+
+//? Variables spécifiques
+$largeurF: 140px;
+$largeurB: calc($largeurF / 10);
+$longueurE: calc($largeurF / 5);
+$border: calc($largeurF * 1.39513 + 4px);
+$uq1: calc($largeurF * 0.07113);
+$uq2: calc($largeurF * 0.48301);
+$dc1: calc($largeurF * 0.45387);
+$dc2: calc($largeurF * 0.1799);
+$ts1: calc($largeurF * 0.38273);
+$ts2: calc($largeurF * 0.30311);
+$cache: calc($largeurF * 0.80774 + 2px);
+
+$loading-logo-size: 5px;
+$loading-logo-size-coefficient: 20;
+$loading-logo-cache: #000000b7;
+$loading-logo-transparent: #ffffff4b;
+
+$project-details-illustration-height: 300px;
+
+$header-height: 90px;
+$total-header-height: 135px;
+$footer-height: 100px;

@@ -14,8 +14,12 @@ export {
 
 // ? Functions middlewares
 import {errorSaver} from "@utilities/errorSaver";
+import {regexTest} from "@utilities/regexTest";
 
-export {errorSaver};
+export {
+    errorSaver,
+    regexTest
+};
 
 // =============================================================================
 

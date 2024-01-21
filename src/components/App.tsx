@@ -1,31 +1,32 @@
 import React from "react";
 import {
-    createBrowserRouter,
-    RouterProvider
+    BrowserRouter as Router,
+    Routes,
+    Route
 } from "react-router-dom";
 
 import {Login, Register} from "@/IndexImporter";
 import "./App.scss";
 
 const App: React.FC = () => {
-    const router = createBrowserRouter([
-        {
-            "path": "/",
-            "element": <></>,
-        },
-        {
-            "path": "/login",
-            "element": <Login />,
-        },
-        {
-            "path": "/register",
-            "element": <Register />,
-        }
-    ]);
-
     return (
-        <div className="starter">
-            <RouterProvider router={router} />
+        <div className="account-global">
+            <Router>
+                <Routes>
+                    <Route
+                        element={<></>}
+                        path="/"
+                    />
+                    <Route
+                        element={<Login />}
+                        path="/login"
+                    />
+                    <Route
+                        element={<Register />}
+                        path="/register"
+                    />
+                </Routes>
+            </Router>
         </div>
     );
 };

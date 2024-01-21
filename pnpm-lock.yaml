@@ -88,6 +88,9 @@ devDependencies:
   vitest:
     specifier: ^0.34.6
     version: 0.34.6(jsdom@22.1.0)(sass@1.70.0)
+  zxcvbn:
+    specifier: ^4.4.2
+    version: 4.4.2
 
 packages:
 
@@ -3713,4 +3716,8 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  /zxcvbn@4.4.2:
+    resolution: {integrity: sha512-Bq0B+ixT/DMyG8kgX2xWcI5jUvCwqrMxSFam7m0lAf78nf04hv6lNCsyLYdyYTrCVMqNDY/206K7eExYCeSyUQ==}
     dev: true
